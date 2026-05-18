@@ -1,70 +1,194 @@
-# Getting Started with Create React App
+# 🛡️ Orange SOC AI Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+![Orange SOC AI](https://img.shields.io/badge/Orange%20SOC%20AI-Platform-FF6600?style=for-the-badge&logo=shield&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Live-00C851?style=for-the-badge)
+![PFE](https://img.shields.io/badge/PFE-2026-FF6600?style=for-the-badge)
+![Powered by Claude](https://img.shields.io/badge/Powered%20by-Anthropic%20Claude-7C3AED?style=for-the-badge)
 
-In the project directory, you can run:
+**Plateforme d'Intelligence Artificielle pour les Centres Opérationnels de Sécurité**
 
-### `npm start`
+*L'IA au service de la cybersécurité opérationnelle — Orange Maroc*
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[🚀 Demo Live](https://soc-chatbot-um5j.vercel.app) · [📖 Documentation](#documentation) · [🔧 Installation](#installation)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+</div>
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📌 Présentation
 
-### `npm run build`
+**Orange SOC AI Platform** est une plateforme SOCaaS (Security Operations Center as a Service) intelligente développée dans le cadre du Projet de Fin d'Études 2026 chez **Orange Maroc**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Elle intègre un assistant IA conversationnel spécialisé en cybersécurité, capable d'analyser des incidents, détecter des menaces et générer des rapports de conformité en temps réel.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ✨ Fonctionnalités
 
-### `npm run eject`
+| Fonctionnalité | Description |
+|---|---|
+| 🤖 **Assistant IA SOC** | Chatbot spécialisé cybersécurité basé sur Claude AI |
+| 🔍 **Analyse d'incidents** | Détection et analyse d'attaques (Brute Force, MITRE ATT&CK) |
+| 📊 **Rapports CIS** | Génération automatique de rapports de conformité |
+| 🎯 **Threat Intelligence** | Identification d'attaquants et corrélation d'IOCs |
+| 📡 **Live Monitoring** | Tableau de bord temps réel avec métriques SOC |
+| 🛠️ **Intégration Wazuh/Suricata** | Compatibilité avec les outils SOC standards |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🏗️ Architecture
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+┌─────────────────────────────────────────────────────┐
+│                  Orange SOC AI Platform              │
+├─────────────────────┬───────────────────────────────┤
+│   Frontend (React)  │      Backend (Node.js)         │
+│   Vercel CDN        │      Railway Cloud             │
+│   localhost:3000    │      Port dynamique            │
+├─────────────────────┼───────────────────────────────┤
+│   • Dashboard SOC   │   • API REST Express           │
+│   • Chat Interface  │   • Proxy Anthropic Claude     │
+│   • Scénarios       │   • Gestion CORS               │
+│     prédéfinis      │   • Variables d'env sécurisées │
+└─────────────────────┴───────────────────────────────┘
+                              │
+                    ┌─────────▼──────────┐
+                    │   Anthropic Claude  │
+                    │  claude-sonnet-4   │
+                    │  (LLM Backbone)    │
+                    └────────────────────┘
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🚀 Stack Technique
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Frontend**
+- React 18
+- CSS3 (thème Orange SOC custom)
+- Fetch API
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Backend**
+- Node.js + Express
+- CORS configurable
+- dotenv
 
-### Code Splitting
+**IA**
+- Anthropic Claude (claude-sonnet)
+- Prompt engineering SOC spécialisé
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Déploiement**
+- Frontend : Vercel
+- Backend : Railway
+- CI/CD : GitHub Actions (auto-deploy)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📦 Installation
 
-### Making a Progressive Web App
+### Prérequis
+- Node.js >= 18
+- npm >= 9
+- Clé API Anthropic
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Clone & Install
 
-### Advanced Configuration
+```bash
+git clone https://github.com/raniagps/soc-chatbot.git
+cd soc-chatbot
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Configuration
 
-### Deployment
+Crée un fichier `.env` à la racine :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```env
+ANTHROPIC_API_KEY=sk-ant-api03-...
+PORT=5000
+```
 
-### `npm run build` fails to minify
+### Lancement local
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+# Terminal 1 — Backend
+node server.js
+
+# Terminal 2 — Frontend
+npm start
+```
+
+L'application est accessible sur `http://localhost:3000`
+
+---
+
+## 🎯 Cas d'Usage SOC
+
+### 1. Analyse d'attaque Brute Force SSH
+> *"Analyser l'attaque Brute Force SSH détectée sur le serveur 192.168.1.10"*
+
+L'IA analyse les patterns d'attaque, corrèle avec MITRE ATT&CK T1110, et recommande des contre-mesures.
+
+### 2. Rapport de conformité CIS
+> *"Générer un rapport de conformité CIS Benchmark complet"*
+
+Génération automatique d'un rapport structuré avec score de conformité et recommandations prioritaires.
+
+### 3. Identification d'attaquant
+> *"Identifier l'attaquant depuis Kali Linux 10.0.0.5"*
+
+Corrélation d'IOCs, géolocalisation, historique des menaces et profil de l'attaquant.
+
+---
+
+## 📊 Métriques Tableau de Bord
+
+| Métrique | Valeur |
+|---|---|
+| Événements analysés | 284 909 |
+| Alertes Email | 9 272 |
+| Agents Actifs | 4 |
+| Score CIS | 45% |
+
+---
+
+## 🔐 Sécurité
+
+- Les clés API sont stockées dans des variables d'environnement (jamais dans le code)
+- CORS configuré pour les origines autorisées uniquement
+- Communication HTTPS en production
+- Aucune donnée utilisateur persistée
+
+---
+
+## 🌐 Déploiement Production
+
+| Composant | Plateforme | URL |
+|---|---|---|
+| Frontend | Vercel | `soc-chatbot-um5j.vercel.app` |
+| Backend | Railway | `soc-chatbot-production.up.railway.app` |
+
+---
+
+## 👩‍💻 Auteur
+
+**Rania** — Étudiante ingénieure en Cybersécurité
+Projet de Fin d'Études — Orange Maroc · 2026
+
+---
+
+## 📄 Licence
+
+Projet académique — Orange Maroc PFE 2026. Tous droits réservés.
+
+---
+
+<div align="center">
+
+**Orange SOC AI Platform** · Propulsé par Anthropic Claude · PFE 2026
+
+*Développé avec ❤️ pour Orange Maroc*
+
+</div>
